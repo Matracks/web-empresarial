@@ -1,2 +1,3 @@
 # web-empresarial
-Web empresa gestionada con Django
+Web empresarial, con presentacion, blog, formulario de contacto y gestion de usuarios.
+Gestionada con Django.
