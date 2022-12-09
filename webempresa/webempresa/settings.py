@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'services',
     'social',
     'pages',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -130,6 +131,28 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Ck editor configs
+# CKEDITOR_CONFIGS = {
+#     'default': {
+#         'width': 'auto',
+#         'height': 'auto',
+#     }
+# }
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'width': 'auto',
+        'height': 'auto',
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Link', 'Unlink'],
+            ['RemoveFormat', 'Source']
+        ]
+    }
+}
+
 # Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
@@ -139,5 +162,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'xxxx@gmail.com'
-EMAIL_HOST_PASSWORD = 'xxxx'
+EMAIL_HOST_USER = 'xxxxx5@gmail.com'
+EMAIL_HOST_PASSWORD = 'xxxxx'

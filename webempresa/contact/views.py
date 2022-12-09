@@ -23,7 +23,7 @@ def contact(request):
                 'La Caffettiera: Nuevo mensade de contacto',
                 f'De {name} <{email_send}>\n\nEscribio:\n\n{content}',
                 email_send,
-                ['xxx@gmail.com'],
+                ['xxxxx@gmail.com'],
                 reply_to=[email_send]
             )
 
