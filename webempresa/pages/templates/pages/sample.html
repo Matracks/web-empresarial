@@ -15,6 +15,12 @@
             <div class="section-content">
               {{ page.content|safe }}
             </div>
+
+            {% if request.user.is_staff %}
+              <div>
+                Editar
+              </div>
+            {% endif %}
           </div>
         </div>
       </div>
