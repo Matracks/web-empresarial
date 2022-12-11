@@ -169,7 +169,7 @@ EMAIL_HOST_PASSWORD = 'xxxxx'
 # Admin dashboard
 JAZZMIN_SETTINGS = {
     "site_title": "La Caffettiera",
-    "site_header": "your_site_header",
+    "site_header": "Caffettiera",
     "site_brand": "La Caffettiera",
     "site_icon": "core/img/icon.png",
     # Add your own branding here
