@@ -3,3 +3,4 @@ django==4.1
 django-ckeditor==6.5.0
 pylint==2.15.0
 pylint-celery==0.3
+django-jazzmin==2.6
