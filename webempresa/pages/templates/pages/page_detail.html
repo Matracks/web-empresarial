@@ -18,7 +18,7 @@
 
             {% if request.user.is_staff %}
               <div>
-                Editar
+                <p><a href="{% url 'page:update' page.id page.title|slugify %}">Editar</a></p>
               </div>
             {% endif %}
           </div>

@@ -299,3 +299,12 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
+
+.django-ckeditor-widget {
+  display: block !important;
+}
+
+.django-ckeditor-widget textarea {
+  width: 100% !important;
+  max-width: 821px;
+}

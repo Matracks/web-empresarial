@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% block title %}Sample{% endblock %}
+{% load static%}
+
+
+{% block content %}
+<section class="page-section about-heading">
+  <div class="container">
+    <div class="about-heading-content mbtm">
+      <div class="row">
+        <div class="col-xl-9 col-lg-10 mx-auto">
+          <div class="bg-faded rounded p-5 forced">
+            <div class="section-content mx-auto">
+            {% if  'ok' in request.GET %}
+              <div>
+                <p style="color: green;"><b><i>La pagina se ha editado correctamente.</b></i>
+              </div>
+            {% endif %}
+              <form action="" method="post">{% csrf_token %}
+                    {{ form.as_p }}
+                <div class='text-center'>
+                <input type="submit" class='btn btn-primary btn-block' value="Actualizar página" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
