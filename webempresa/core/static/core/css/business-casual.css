@@ -308,3 +308,18 @@ ul.errorlist{
   width: 100% !important;
   max-width: 821px;
 }
+
+#myBtn {
+	display: none;
+	width: 40px;
+  height: 40px;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+  border-radius: 999px;
+}
+  
+#myBtn:hover {
+  background-color: #555;
+}
