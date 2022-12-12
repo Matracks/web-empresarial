@@ -32,9 +32,13 @@ $(document).ready(function(){
             }, 200);
         }
     });
+	
 	mybtn.click(function(){
-        //$("html, body").animate({ scrollTop: 0 }, 100);
-        window.scrollTo(0,0);
-        return false;
-    });
+		$('body, html').animate({
+			scrollTop: 0
+		}, 500);
+		});
+    // window.scrollTo(0,0);
+    return false;
+    
 });
