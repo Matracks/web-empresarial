@@ -21,11 +21,11 @@ $(document).ready(function(){
             sw=false;
             setTimeout(function(){
 
-            if ($(this).scrollTop() != 0) {
-                mybtn.show();
+            if ($(this).scrollTop() > 100) {
+                mybtn.slideDown(400);
                 sw=true;
             } else {
-                mybtn.hide();
+                mybtn.slideUp(400);
                 sw=true;
             }
 
