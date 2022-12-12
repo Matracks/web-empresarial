@@ -318,8 +318,10 @@ ul.errorlist{
 	bottom: 20px;
 	right: 20px;
   border-radius: 999px;
+  box-shadow:#555;
 }
   
 #myBtn:hover {
   background-color: #555;
+  box-shadow: 0 0 15px black;
 }

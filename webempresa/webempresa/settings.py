@@ -132,14 +132,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Ck editor configs
-# CKEDITOR_CONFIGS = {
-#     'default': {
-#         'width': 'auto',
-#         'height': 'auto',
-#     }
-# }
-
 CKEDITOR_CONFIGS = {
     'default': {
         'width': 'auto',
