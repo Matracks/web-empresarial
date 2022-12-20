@@ -7,8 +7,6 @@ from .models import Contact
 
 
 # Create your views here.
-
-
 def contact(request):
     contact_form = ContactForm()
 
@@ -20,7 +18,7 @@ def contact(request):
             content = request.POST.get('content', '')
 
             email = EmailMessage(
-                'La Caffettiera: Nuevo mensade de contacto',
+                'La Caffettiera: Nuevo mensaje de contacto',
                 f'De {name} <{email_send}>\n\nEscribio:\n\n{content}',
                 email_send,
                 ['xxxxx@gmail.com'],
